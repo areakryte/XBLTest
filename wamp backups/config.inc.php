@@ -14,7 +14,7 @@
  * This is needed for cookie based authentication to encrypt password in
  * cookie
  */
-$cfg['blowfish_secret'] = 'Register5'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+$cfg['blowfish_secret'] = 'swordfish'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
 
 /*
  * Servers configuration
@@ -30,9 +30,9 @@ $cfg['Servers'][$i]['verbose'] = 'mysql wampserver';
 //$cfg['Servers'][$i]['auth_type'] = 'cookie';
 $cfg['Servers'][$i]['auth_type'] = 'cookie';
 $cfg['Servers'][$i]['user'] = 'root';
-$cfg['Servers'][$i]['password'] = 'Register5';
+$cfg['Servers'][$i]['password'] = [null];
 /* Server parameters */
-$cfg['Servers'][$i]['host'] = '127.0.0.1';
+$cfg['Servers'][$i]['host'] = 'localhost';
 $cfg['Servers'][$i]['connect_type'] = 'tcp';
 $cfg['Servers'][$i]['compress'] = false;
 /* Select mysql if your server does not have mysqli */

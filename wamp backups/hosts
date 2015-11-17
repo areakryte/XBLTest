@@ -22,7 +22,7 @@
 
 #XBL dns settings
 #Windows Location:
-#C:\wamp\www
+#C:\Windows\System32\drivers\etc
 
 127.0.0.1       localhost
 #::1		localhost
