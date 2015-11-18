@@ -1,10 +1,3 @@
-<?php 
-//Start a session
-//session_start();
-//require_once ('db_connect.inc.php');
-//require_once ("functions.inc.php");
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +12,6 @@
 <br>
 
 <?php
-//include "login.php";
 $servername = "localhost";
 $username = "root";
 $password = "";
