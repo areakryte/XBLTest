@@ -1,30 +1,49 @@
 <!DOCTYPE html>
-<html>
+<?php
+session_start();
+?>
 <head>
-<title> XBL Internal </title>
+	<title> XBL Internal Login </title>
 </head>
 <body>
 
-<h1>XBL Internal Site</h1>
+	<h1 align = "center" >XBL Internal Login</h1>
 
-<p>Links</p>
-<a href="downloads.php">Downloads</a>
-<br>
-
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$info = "test";
-
-$conn = new mysqli($servername, $username, $password, $info);
-if($conn->connect_error)
-{
-	die("Connection Failed: " . $conn->connect_error);
-}
-echo "Success";
-$conn->close();
-?>
+	<form action = "login.php" method = "post">
+	<table width = "500" align = "center" bgcolor = "skyblue">
+	<tr align = "center">
+		<td colspan = "3" >
+			<h2>User Login</h2>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align = "right">
+			<b>Email</b>
+		</td>
+		<td>
+			<b>
+				<input type = "text" name = "email" required = "required"/>
+			</b>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align = "right">
+			<b>Password</b>
+		</td>
+		<td>
+			<b>
+				<input type = "password" name = "pass" required = "required"/>
+			</b>
+		</td>
+	</tr>
+	
+	<tr align = "center">
+		<td colspan = "3">
+			<input type = "submit" name = "login" value = "Login"/>
+		</td>
+	</tr>
 
 </body>
 </html>
