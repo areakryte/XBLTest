@@ -24,9 +24,10 @@
 #Windows Location:
 #C:\Windows\System32\drivers\etc
 
-127.0.0.1       localhost
-#::1		localhost
-127.0.0.1	xbl.local	#xbl internal domain
-#::1		xbl.local	#xbl internal domain
-127.0.0.1	www.xbl.local	#xbl internal domain
-192.168.1.7	xbl.local	#xbl internal domain
+127.0.0.1       		localhost
+#::1					localhost
+#::1					xbl.local			#xbl internal domain
+192.168.1.9				xbl.local			#xbl File Server
+192.168.1.9:80			xbl.local			#xbl File Server
+192.168.1.9:8080		xbl.help			#xbl IT Support Desk
+192.168.1.9:8080		www.xbl.help		#xbl IT Support Desk

@@ -4,7 +4,7 @@ $server = "localhost";
 $user = "root";
 $pass = "";
 $db = "server";
-$connection = mysqli_connect(server, user, pass, db);
+$connection = mysqli_connect($server, $user, $pass, $db);
 
 //Error Handling block
 if(mysqli_connect_errno)
@@ -16,7 +16,7 @@ if(mysqli_connect_errno)
 if(isset($_POST['login']))
 {
 	$email = mysqli_real_escape_string($connection, $_POST['email']);
-	$password = mysqli_real_escape_string($connection, $_POST['password']);
+	$password = mysqli_real_escape_string($connection, $_POST['pass']);
 	$select_user_query = "select * from where user_email = '$email' AND user_password = '$password'";
 	$run_user_query = mysqli_query($connection, $select_user_query);
 	$return_user = mysqli_num_rows($run_user_query);
